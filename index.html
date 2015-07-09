@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width" />
+   <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+   <link rel="shortcut icon" href="images/favicon.gif">
+   <title>Seqkor</title>
+   <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+   <div id="menu">
+      <span style:"color: #4A5928;text-shadow: 0 -2px 2px #bdcd9c;"><i>Seqker: Tool for Genomics Prediction</i></span>
+      <ul>
+         <li id="menu-home" style="background: #89A34E;border-top-left-radius:20px;border-top-right-radius: 20px;">
+            <a href="index.html" style="color: #4A5928;text-shadow: 0 -2px 2px #bdcd9c;"><span>Home</span></a>
+         </li>
+         <li id="menu-about"><a href="about.html"><span>About</span></a></li>
+         <li id="menu-userguide"><a href="userguide.html"><span>User Guide</span></a></li>
+         <li id="menu-references"><a href="references.html"><span>References</span></a></li>
+         <li id="menu-contact"><a href="contact.html"><span>Contact</span></a></li>
+      </ul>
+   </div>
+
+   <div class="page">
+      <table>
+         <tr>
+            <td>
+               &nbsp;<img align="left" src="images/logo-1.gif" border=0>&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+               <form enctype="multipart/form-data" accept-charset="utf-8" method="POST" action="">
+                  <ul class="submission-form" id="fields" align="center">
+                     <li><label>Full Name<span class="required">*</span></label><input type="text" name="first" class="field-divided"/>&nbsp;<input type="text" name="last" class="field-divided"/></li>
+                     <li><label>Email<span class="required">*</span></label><input type="email" name="email" class="field-long" /></li>
+                     <li><label>Institution</label><input type="text" name="institution" class="field-long"/></li>
+                     <br>
+                     <li><label>Prediction Task<span class="required">*</span></label>
+                        <select name="option" class="field-select" style="font: 16px 'calibri light';">
+                           <option style="font: 16px 'calibri light';" value="Option 1">Option 1</option>
+                           <option style="font: 16px 'calibri light';" value="Option 2">Option 2</option>
+                           <option style="font: 16px 'calibri light';" value="Option 3">Option 3</option>
+                        </select>
+                     </li>
+                     <li>
+                        <label>Paste a single sequence or several sequences in FASTA format into the field below:<span class="required">*</span></label>
+                        <textarea name="sequence" id="seqsub" class="field-long field-textarea"></textarea>
+                     </li>
+                     <li>
+                        <label>Or submit a file in FASTA format:<span class="required">*</span></label>
+                        <input name="sequence_file" size=64 type="file">
+                     </li>
+                     <li>
+                        <label><input name="sort" type="checkbox" value="sort" checked="true">Sort the output by prediction</input></label>
+                        <label><input name="report" type="checkbox" value="report">Report the progress of the prediction</input></label>
+                     </li><br>
+                     <li><input type="submit" value="Submit" style="font: 18px 'calibri light';"/>&nbsp;&nbsp;<input type="reset" value="Clear" style="font: 18px 'calibri light';"/></li>
+                     <li><input type="button" value="Back" onClick="history.back();return false;" style="font: 18px 'calibri light';"></li>
+                     <br>
+                  </ul>
+               </form>
+            </td>
+            <td>
+               <ul class="submission-form" id="selection">
+                  <li><input type="button" value="Option 1" /></li>
+                  <li><input type="button" value="Option 2" /></li>
+                  <li><input type="button" value="Option 3" /></li>  
+               </ul>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <center><h3>Developed in <a href="http://www.faculty.virginia.edu/adli/main.html">Adli Lab @UVa</a></h3></center>
+</body>
+<html>

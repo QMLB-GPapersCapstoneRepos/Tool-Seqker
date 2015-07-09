@@ -1,0 +1,169 @@
+#menu {
+  width: auto;
+}
+#menu,
+#menu ul,
+#menu li #menu a {
+  list-style: none;
+  margin: 0;
+  font-size: 24px;
+  font-family: calibri;
+  font-weight: lighter;
+  line-height: 1;
+}
+#menu table,
+#menu img {
+  background: #a7bc7a;
+  float: right;
+  vertical-align: middle;
+}
+#menu ul {
+  zoom: 1;
+  background: #a7bc7a;
+}
+#menu ul:before {
+  content: '';
+  display: block;
+}
+#menu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#menu li {
+  float: left;
+/*  border-right: 2px solid #b2c58b;*/
+}
+#menu li:hover {
+  background: #89A34E;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#menu a,
+#menu a:link,
+#menu a:visited {
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0 -2px 2px #4A5928;
+/*  border-right: 2px solid #839b4e;*/
+}
+#menu a:hover {
+  color: #4A5928;
+  text-shadow: 0 -2px 2px #bdcd9c;
+}
+
+.submission-form {
+    background: #89A34E;
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 22px "calibri light";
+}
+.submission-form li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.submission-form label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: lighter;
+}
+.submission-form input[type=text], 
+.submission-form input[type=datetime],
+.submission-form input[type=number],
+.submission-form input[type=email],
+textarea, 
+select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    margin:0px;
+    -webkit-transition: all 0.40s ease-in-out;
+    -moz-transition: all 0.40s ease-in-out;
+    -ms-transition: all 0.40s ease-in-out;
+    -o-transition: all 0.40s ease-in-out;
+    outline: none;  
+}
+.submission-form input[type=text]:focus, 
+.submission-form input[type=datetime]:focus,
+.submission-form input[type=number]:focus,
+.submission-form input[type=email]:focus,
+.submission-form textarea:focus, 
+.submission-form select:focus{
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+.submission-form .field-divided{
+    width: 49%;
+}
+
+.submission-form .field-long{
+    width: 100%;
+}
+.submission-form .field-select{
+    width: 100%;
+}
+.submission-form .field-textarea{
+    height: 100px;
+}
+.submission-form input[type=submit],
+.submission-form input[type=reset],
+.submission-form input[type=button]{
+    background: #355F29;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.submission-form input[type=submit]:hover,
+.submission-form input[type=reset]:hover,
+.submission-form input[type=button]:hover{
+    background: #203919;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.submission-form .required{
+    color:red;
+}
+
+.page {
+  background: #89A34E;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.page h1,h2,h3 {
+  font: "calibri light";
+  line-height: 1;
+  font-weight: lighter;
+}
+
+html {
+margin: 0;
+padding: 0;
+zoom: 100%;
+}
+
+body {
+margin-top: 30px;
+min-width: 405px;
+margin-left: 40px;
+margin-right: 40px;
+font-style: normal;
+font-weight: 400;
+background: #a7bc7a;
+}
+/* background:   #598059; */
+/*background: linear-gradient(to bottom right ,#BFFFBF,#F2FFF2); /* Standard syntax */
+/*font-size: 20px;
+box-shadow: 5px 5px 10px #202020;}
+h1, h2 , h3 {font-weight: lighter}*/
+
