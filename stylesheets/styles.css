@@ -1,3 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #a7bc7a;
+  margin-top: 30px;
+  min-width: 405px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'calibri light', 'sans-serif';
+  font-style: normal;
+  font-weight: lighter;
+  color: #f2f2f2;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+td {
+  padding: 10px 10px;
+}
+
+p {
+  line-height: 2em;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.7em;
+}
+
+h2 {
+  color: #F0E184;
+  font-size: 2.2em;
+  font-weight: bold;
+  padding: 0 0 5px;
+  margin: 0;
+}
+
+h3 {
+  color: #D85D4D;
+  font-size: 1.9em;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+article {
+    padding: 10px 10px 20px 5px;
+}
+
+.width {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+.page {
+  background: #89A34E;
+  border-radius: 30px 30px 30px 30px;
+}
 #menu {
   width: auto;
 }
@@ -83,6 +154,7 @@ select{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     border:1px solid #BEBEBE;
+    background-color:#539765;
     padding: 7px;
     margin:0px;
     -webkit-transition: all 0.40s ease-in-out;
@@ -134,36 +206,21 @@ select{
 .submission-form .required{
     color:red;
 }
-
-.page {
-  background: #89A34E;
-  border-radius: 30px 30px 30px 30px;
+/*
+footer {
+  margin:50px auto 0;
+  background: #243B2A;
+  padding: 10px;
+  text-align: center;
 }
 
-.page h1,h2,h3 {
-  font: "calibri light";
-  line-height: 1;
-  font-weight: lighter;
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 0.8em;
 }
 
-html {
-margin: 0;
-padding: 0;
-zoom: 100%;
-}
-
-body {
-margin-top: 30px;
-min-width: 405px;
-margin-left: 40px;
-margin-right: 40px;
-font-style: normal;
-font-weight: 400;
-background: #a7bc7a;
-}
-/* background:   #598059; */
-/*background: linear-gradient(to bottom right ,#BFFFBF,#F2FFF2); /* Standard syntax */
-/*font-size: 20px;
-box-shadow: 5px 5px 10px #202020;}
-h1, h2 , h3 {font-weight: lighter}*/
-
+footer p, footer p a {
+  color: #539765;
+  border-bottom-color: #539765;
+}*/
