@@ -11,8 +11,8 @@
 
 <body>
    <header>
-      <i><h1>SeqKer</h1></i>
-      <i><h2>Kernel based tool for TF binding prediction</h2></i>
+      <h1><i>SeqKer</i></h1>
+      <h2><i>Kernel based tool for TF binding prediction</i></h2>
    </header>
 
    <div class="page width">
@@ -32,7 +32,7 @@
          <table>
             <tr>
                <td>
-                  <form enctype="multipart/form-data" accept-charset="utf-8" onsubmit="validate_fields()" method="POST" action="/cgi/form.py">
+                  <form enctype="multipart/form-data" accept-charset="utf-8" onsubmit="validate_fields()" method="POST" action="/cgi-bin/form.cgi">
                      <ul class="submission-form" id="fields" align="center">
                         <li>
                            <label>Full Name<span class="required">*</span></label><input type="text" name="firstname" class="field-divided"/>&nbsp;<input type="text" name="lastname" class="field-divided"/>
@@ -41,7 +41,6 @@
                         <li>
                            <label>Institution<span class="required">*</span></label><input type="text" name="institution" class="field-long"/>
                         </li>
-                        <br>
                         <li>
                            <label>
                               Paste positive site coordinates for training into the field below (BED format):<span class="required">*</span>
@@ -74,7 +73,6 @@
                               <option style="font: 16px 'calibri light';" value="Mouse">Mouse</option>
                            </select>
                         </li>
-                        <br>
                         <li>
                            <input type="submit" value="Submit" style="font: 18px 'calibri light';"/>&nbsp;&nbsp;<input type="reset" value="Clear" style="font: 18px 'calibri light';"/>
                         </li>

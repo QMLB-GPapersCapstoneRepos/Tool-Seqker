@@ -1,0 +1,23 @@
+<html>
+<head><title>Submit form</title>
+</head>
+<body>
+
+<form action="/cgi/sendmail.pl" method="POST">
+Full name: <input name="fullname"><br>
+
+Country:
+<select name="country">
+<option></option>
+<option value="usa">USA</option>
+<option value="russia">Russia</option>
+</select><br>
+
+Question:
+<textarea name="question"></textarea><br>
+
+<input type="submit" value="Send mail">
+</form>
+
+</body>
+</html>
