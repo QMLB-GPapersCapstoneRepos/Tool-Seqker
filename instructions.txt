@@ -30,3 +30,8 @@ jobid.predict.txt
 
 http://www.rebol.com/docs/cgi2.html
 Genome information in jobid.info.txt as separate
+
+
+7/16
+Genome selection above prediction/training field area
+Change field colors to 3 types matching
