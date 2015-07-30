@@ -1,27 +1,20 @@
 var isEmpty = /^\s*$/;
 
-
-function validate() {
-    var fn = document.getElementById("firstname").value;
-    var ln = document.getElementById("lastname").value;
-    var email = document.getElementById("email").value;
-    var inst = document.getElementById("institution").value;
-    if(fn == "" || ln == "") {
-        alert("Please enter your full name");
-        return false;
-    }
-    if(email == "") {
-        alert("Please enter your email");
-        return false;
-    }
-    if(inst == "") {
-        alert("Please enter your school");
+function validate(id) {
+    var text=document.getElementById(id).value;
+    if(!text.match(/\S/)) {
         return false;
     } else {
-        window.location.href='http://localhost:8000/redirect.php/';
-        return false;
+        return true;
     }
 }
+function processForm() {
+    if((validate('firstname')||validate('lastname')||validate('email')||
+    } else {
+        return true;
+    }
+}
+
 //     //First Name Validation 
 //     var fn=document.getElementById('firstname').value;
 //     if(fn == ""){
