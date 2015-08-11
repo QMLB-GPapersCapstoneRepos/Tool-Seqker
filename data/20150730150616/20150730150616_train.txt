@@ -1,4 +1,0 @@
-Genome: Human
-Cell type: K562
-TF: CTCF
-

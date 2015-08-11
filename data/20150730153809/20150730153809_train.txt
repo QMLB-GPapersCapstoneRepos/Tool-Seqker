@@ -1,4 +1,0 @@
-Genome: Mouse
-Cell type: CH12
-TF: CTCF
-

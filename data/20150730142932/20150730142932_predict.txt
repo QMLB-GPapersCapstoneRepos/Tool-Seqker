@@ -1,4 +1,0 @@
-Genome: Human
-Cell type: GM12878
-TF: JUND
-
