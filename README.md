@@ -1,5 +1,11 @@
-# Tool-Seqker
-Kernel-based tool for transcription factor binding prediction
+# Tool-Seqker File Directory
 
-Issues:
-- h19.fa and h19.fa.fai files can not upload to git
+**Root**
+- C:/wamp/www/scripts
+- ../../../images
+- ../../../stylesheets
+- ../../../svm
+- ../../../data
+- ../../../../input
+- ../../../../output
+- ../../bin/apache/apache2.4.9/cgi-bin
