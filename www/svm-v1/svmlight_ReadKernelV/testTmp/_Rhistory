@@ -1,0 +1,23 @@
+pred=read.table("output-rits.tmp",header=FALSE)
+tru=data.frame(c(rep(1,100),rep(-1,100)))
+score=prediction(pred$V1,tru$V1)
+library(ROCR)
+score=prediction(pred$V1,tru$V1)
+V1
+tru
+head(tru)
+tru=data.frame(label=c(rep(1,100),rep(-1,100)))
+head(tru)
+score=prediction(pred$V1,tru$label)
+auc=attr(performance(acore ,"auc"), "y.values")
+auc=attr(performance(score ,"auc"), "y.values")
+auc
+pred=read.table("output-test.tmp",header=FALSE)
+pred=read.table("output-rits-weights.tmp",header=FALSE)
+tru=data.frame(label=c(rep(1,100),rep(-1,100)))
+score=prediction(pred$V1,tru$label)
+auc=attr(performance(score ,"auc"), "y.values")
+auc
+pred=read.table("output.tmp",header=FALSE)
+score=prediction(pred$V1,tru$label)
+q()
