@@ -1,9 +1,0 @@
-CC=gcc
-CFLAGS=-O3 -ansi 
-
-all:readInput gappedKernel_v2-1
-readInput: shared.o readInput.o
-gappedKernel_v2-1: shared.o gappedKernel_v2-1.o 
-clean:	
-	rm -f *.o readInput
-	rm -f *.o gappedKernel_v2-1
