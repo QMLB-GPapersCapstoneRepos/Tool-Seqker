@@ -2,6 +2,7 @@
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="refresh" content="3;URL='http://localhost:8000/form.php'">
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
@@ -30,7 +31,7 @@
                <a href="index.php">Home</a>
             </li>
             <li>
-               <a href="form.php">Training and Prediction</a>
+               <a href="form.php">Prediction and Training</a>
             </li>
             <li>
                <a href="userguide.php">User Guide</a>
@@ -40,6 +41,9 @@
             </li>
             <li>
                <a href="references.php">References</a>
+            </li>
+            <li>
+               <a href="recentjobs.php">Recent Jobs</a>
             </li>
             <li>
                <a href="contact.php">Contact</a>
@@ -52,31 +56,16 @@
       <div id="page-content-wrapper">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-lg-4">
-                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-               </div>
+               <h2></h2>
             </div>
             <div class="row">
                <div class="col-lg-6">
-                  <h1>About SeqKer</h1>
+                  <h1>Thank you</h1>
+                  <p>Your job has been submitted. You will be redirected back shortly.</p>
                </div>
             </div>
-            <div class="row">
-               <div class="col-lg-6">
-                  <p>To be updated. Please check back later.</p>
-               </div>
-            </div>
-         </div>
+         <div>
       </div>
    </div>
-
-   <!-- Menu Toggle Script -->
-   <script>
-      $("#menu-toggle").click(function(e) {
-         e.preventDefault();
-         $("#wrapper").toggleClass("toggled");
-      });
-   </script>
-
 </body>
-<html>
+</html>

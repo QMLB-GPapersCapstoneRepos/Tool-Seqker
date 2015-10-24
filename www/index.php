@@ -1,57 +1,96 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
 <html>
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width" />
-   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel-"stylesheet" href="css/formValidation.min.css">
    <link rel="shortcut icon" href="images/logo.png">
    <title>SeqKor</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="scripts/script.js"></script>
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <!-- Bootstrap JS -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- FormValidation plugin and the class supports validating Bootstrap form -->
+   <script src="js/formValidation.js"></script>
+   <script src="js/framework/bootstrap.min.js"></script>
 </head>
 
 <body>
-   <div class="header">
-      <img src="images/logo.png" alt="logo">
-      <h1>SeqKer</h1>
-      <h2>Kernal-based tool for TF-binding prediction</h2>
+   <div id="wrapper">
+   <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+         <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+               <a href="index.php">
+                  <h2>SeqKer</h2>
+               </a>
+            </li>
+            <li>
+               <a href="index.php">Home</a>
+            </li>
+            <li>
+               <a href="form.php">Training and Prediction</a>
+            </li>
+            <li>
+               <a href="userguide.php">User Guide</a>
+            </li>
+            <li>
+               <a href="about.php">About SeqKer</a>
+            </li>
+            <li>
+               <a href="references.php">References</a>
+            </li>
+            <li>
+               <a href="contact.php">Contact</a>
+            </li>
+         </ul>
+      </div>
+   <!-- end sidebar wrapper -->
+
+   <!-- Page Content -->
+      <div id="page-content-wrapper">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-4">
+                  <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <h1>Welcome to SeqKer Tool</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <p>The Kernel-based tool for transcription factor binding prediction</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <p>SeqKer is a virtual laboratory and Kernel-based tool for the identification, prediction and training of
+                  transcription factorbinding sites (TFBS) from a species or groups of species of interest. The user can
+                  inspect the result of the search through a graphical HTML interface and downloadable text files. SeqKer is
+                  developed and maintained by the <a href="http://www.cs.virginia.edu/yanjun/index.htm">University of Virginia
+                  Department of Computer Science.</a> To begin, click below.
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <a href="form.php" class="btn btn-primary">Begin</a>
+               </div>
+            </div>
+         <div>
+      </div>
    </div>
 
-   <div class="menu">
-   <ul>
-      <li id="menu-home"><a href="index.php"><span>Home</span></a></li>
-      <li id="menu-about"><a href="about.php"><span>About</span></a></li>  
-      <li id="menu-userguide"><a href="userguide.php"><span>User Guide</span></a></li>
-      <li id="menu-references"><a href="references.php"><span>References</span></a></li>
-      <li id="menu-recentjobs"><a href="recentjobs.php"><span>Recent Jobs</span></a></li>
-   </ul>
-   </div>
-
-   <div class="content">
-      <table class="selection">
-         <tr>
-            <td>
-               <a href="form.php">
-                  <img src="images/prediction.jpg">
-                  <h3>Predict Transcription Factor Sequence Binding</h3>
-               </a>
-            </td><td>
-               <a href="form.php">
-                  <img src="images/training.png">
-                  <h3>Include Training BED Sequences</h3>
-               </a>
-            </td>
-         </tr>
-      </table>
-   </div>
-   <hr/>
-   <div class="footer_info">
-      <table>
-         <h3>Developed and maintained by</h3>
-         <a href="http://www.cs.virginia.edu/yanjun/index.htm"><img src="images/uva_logo.png"></a>
-      </fieldset>
-   </div>
+   <!-- Menu Toggle Script -->
+   <script>
+      $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+      });
+   </script>
 </body>
 </html>
