@@ -3,17 +3,17 @@
 #make clean
 #make all
 
-jobID= $1
-nsamp= $2 #only for train.fasta, both dna and protein count total line count /2
-ntest= $3 #only for test.fasta, both dna and protein count total line count /2
-seqlen= $4  # protein put 11, DNA put 100
+jobID=$1
+nsamp=$2 #only for train.fasta, both dna and protein count total line count /2
+ntest=$3 #only for test.fasta, both dna and protein count total line count /2
+seqlen=$4  # protein put 11, DNA put 100
 
 g=10
 k=6
 cval=10
 
 trainfile=data/input/$jobID/$jobID.train.fasta   #argument required : file name
-testfile=data/input/$jobID/$joibID.test.fasta   #argument required : file name
+testfile=data/input/$jobID/$jobID.test.fasta   #argument required : file name
 file=data/output/$jobID
 
 #CONVERT TO DICTIONARY

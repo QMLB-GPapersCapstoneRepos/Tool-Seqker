@@ -121,7 +121,7 @@ def to_html(in_file, out_file):
 
 if __name__ == "__main__":
     # read input file
-    indir = "../../www/svm-v1/data/input/"+sys.argv[2]
+    indir = "../svm-v1/data/input/"+sys.argv[2]
     pred_filename = sys.argv[2]+".test.fasta"
     train_filename = sys.argv[2]+".train.fasta"
 
@@ -154,7 +154,7 @@ if __name__ == "__main__":
     txt_filename = "PRED.txt"
 
     # change to output dir
-    outdir = "../../www/svm-v1/data/output/"+sys.argv[2]
+    outdir = "data/output/"+sys.argv[2]
     while not os.path.isdir(outdir):
         time.sleep(1)
     if os.path.isdir(outdir):
