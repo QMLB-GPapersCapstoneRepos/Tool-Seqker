@@ -8,7 +8,7 @@ use File::Basename;
 my $q = new CGI;
 
 # redirect to submitted page, which will be redirected to form page.
-my $url = "http://qdata.cs.virginia.edu/www/submitted.php";
+my $url = "http://qdata.cs.virginia.edu/submitted.php";
 print CGI::redirect($url);
 
 print CGI::header();
@@ -23,7 +23,7 @@ sub getLoggingTime {
 my $timestamp = getLoggingTime();
 
 # make directory in data, need to change
-my $dir = "C:/wamp/www/svm-v1/data/input/$timestamp/"; 			# exporting and uploading file to the following directory
+my $dir = "/var/www/svm-v1/data/input/$timestamp/"; 			# exporting and uploading file to the following directory
 mkdir $dir unless -d $dir; 							# Check if dir exists. If not create it.
 my $infofn = $timestamp . ".info.txt";				#info file for form info
 
@@ -103,7 +103,7 @@ if (defined $prediction) {
 # }
 
 # run python script
-my $pydir = "C:/wamp/www/py";
+my $pydir = "/var/www/py";
 my $pycmd = "python $pydir/process.py $email $timestamp $seqtype $seqlength";
 system($pycmd);
 

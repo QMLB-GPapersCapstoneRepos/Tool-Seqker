@@ -31,7 +31,7 @@
                <a href="index.php">Home</a>
             </li>
             <li>
-               <a href="form.php">Prediction and Training</a>
+               <a href="form.php">Training and Prediction</a>
             </li>
             <li>
                <a href="userguide.php">User Guide</a>
@@ -43,14 +43,11 @@
                <a href="references.php">References</a>
             </li>
             <li>
-               <a href="recentjobs.php">Recent Jobs</a>
-            </li>
-            <li>
                <a href="contact.php">Contact</a>
             </li>
          </ul>
       </div>
-   <!-- end sidebar wrapper -->
+      <!-- end sidebar wrapper -->
 
    <!-- Page Content -->
       <div id="page-content-wrapper">

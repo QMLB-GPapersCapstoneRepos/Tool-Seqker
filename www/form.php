@@ -19,34 +19,34 @@
 <body>
 <div id="wrapper">
 	<!-- Sidebar -->
-	<div id="sidebar-wrapper">
-		<ul class="sidebar-nav">
-			<li class="sidebar-brand">
-				<a href="index.php">
-					<h2>SeqKer</h2>
-				</a>
-			</li>
-			<li>
-				<a href="index.php">Home</a>
-			</li>
-			<li>
-				<a href="form.php">Training and Prediction</a>
-			</li>
-			<li>
-				<a href="userguide.php">User Guide</a>
-			</li>
-			<li>
-				<a href="about.php">About SeqKer</a>
-			</li>
-			<li>
-				<a href="references.php">References</a>
-			</li>
-			<li>
-				<a href="contact.php">Contact</a>
-			</li>
-		</ul>
-	</div>
-	<!-- end sidebar wrapper -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="index.php">
+						<h2>SeqKer</h2>
+					</a>
+				</li>
+				<li>
+					<a href="index.php">Home</a>
+				</li>
+				<li>
+					<a href="form.php">Training and Prediction</a>
+				</li>
+				<li>
+					<a href="userguide.php">User Guide</a>
+				</li>
+				<li>
+					<a href="about.php">About SeqKer</a>
+				</li>
+				<li>
+					<a href="references.php">References</a>
+				</li>
+				<li>
+					<a href="contact.php">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end sidebar wrapper -->
 
 	<!-- Page Content -->
 	<div id="page-content-wrapper">

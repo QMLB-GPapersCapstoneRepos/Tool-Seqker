@@ -17,8 +17,8 @@
 </head>
 
 <body>
-   <div id="wrapper">
-   <!-- Sidebar -->
+<div id="wrapper">
+      <!-- Sidebar -->
       <div id="sidebar-wrapper">
          <ul class="sidebar-nav">
             <li class="sidebar-brand">
@@ -30,7 +30,7 @@
                <a href="index.php">Home</a>
             </li>
             <li>
-               <a href="form.php">Prediction and Training</a>
+               <a href="form.php">Training and Prediction</a>
             </li>
             <li>
                <a href="userguide.php">User Guide</a>
@@ -42,28 +42,24 @@
                <a href="references.php">References</a>
             </li>
             <li>
-               <a href="recentjobs.php">Recent Jobs</a>
-            </li>
-            <li>
                <a href="contact.php">Contact</a>
             </li>
          </ul>
       </div>
-   <!-- end sidebar wrapper -->
+      <!-- end sidebar wrapper -->
 
    <!-- Page Content -->
       <div id="page-content-wrapper">
          <div class="container-fluid">
             <div class="row">
                <div class="col-lg-4">
-                  <h2></h2>
                   <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                </div>
             </div>
             <div class="row">
                <div class="col-lg-6">
                   <h1>Contact</h1>
-                  <p>If you would like to contact the SeqKer research team, please send an email to
+                  <p>If you would like to contact the SeqKer research team, please email
                   <a href="mailto:seqkertool@gmail.com">seqkertool@gmail.com</a> and we will get back to you shortly.</p>
                </div>
             </div>
